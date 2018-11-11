@@ -1,0 +1,122 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-banner
+	.owl-carousel
+		// Phần Slider
+		.item
+			.title
+				padding: .5rem
+				font-size: 1.5rem
+		.owl-nav
+			button
+				i
+					margin: .5rem 1rem
+					display: block
+		+media-breakpoint-up(sm)
+			.item
+				position: relative
+				.title
+					+pos(abs, null null 0 0)
+					width: 100%
+					color: #fff
+					+background-horizontal(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.62))
+					text-align: center
+					padding-bottom: 4rem
+			.owl-dots
+				+pos(abs, null null 0 0)
+				width: 100%
+				margin-bottom: 1rem
+				.owl-dot
+					span
+						+bor-rad(2px)
+						background: none
+						border: 1px solid $hover
+					&.active
+						span
+							background: $pumpkin
+.home-services
+	background: url('../img/home/sanpham.png')
+	padding: 3rem
+	background-size: cover
+	background-attachment: fixed
+	h2
+		+before-line()
+	.item1
+		margin-bottom: 1rem
+		.figure
+			background: rgba(255,255,255,.5)
+			height: 100%
+			padding: 3rem
+			display: flex
+			align-items: center
+.home-khuyenmai
+	padding: 3rem 0
+	h2
+		position: relative
+		+before-line(#fff, 2rem, 0, -0.5rem)
+		text-align: left
+	
+	h3
+		font-size: 15px
+	.xemngay
+		background: $carrot
+		padding: .5rem 2rem
+		margin: 1rem 0
+	.box
+		background: url('../img/home/dichvu.png') no-repeat center center
+		padding: 3rem
+		background: cover
+		text-align: left
+		overflow: hidden
+		padding: 3rem
+		color: #fff
+		min-height: 380px
+		+media-breakpoint-up(lg)
+			min-height: 380px
+.home-gioithieu
+	figure
+		img
+			width: 100%
+		figcaption
+			+pad(1rem)
+			position: relative
+	+media-breakpoint-up(sm)
+		figure
+			text-align: right
+			width: 100%
+			position: relative
+			img
+				width: initial
+			figcaption
+				+pos(abs, 50% null null 0)
+				+pad(2rem 6rem 2rem 0)
+				background: #fff
+				width: 50%
+				transform: translateY(-50%)
+				.icon
+					+pos(abs, 50% 2rem null null)
+					transform: translateY(-50%)
+	.banhxe 
+		display: none
+		max-width: 80px
+		background: url('../img/home/banhxe.png') no-repeat center top
+		background-size: cover
+		+media-breakpoint-up(sm)
+			display: flex
+.home-tintuc
+	margin-bottom: 0
+	h2
+		position: relative
+		text-align: center
+		margin: 4rem
+		+before-line(black, 50%, -50%, -0.3rem)
+		+media-breakpoint-up(sm)
+			p
+				margin-bottom: 0
+			&.tieude
+				font-size: 18px
+				margin: 0
+				padding: 0
+				text-align: left
+

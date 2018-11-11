@@ -1,0 +1,23 @@
+.box
+	background: $sen
+	color: #000
+	min-height: 200px
+	display: flex
+	text-align: center
+	justify-content: ceter
+	align-items: center
+	padding: 2rem
+	.item
+		background: silver
+		margin-bottom: 1rem
+		&:last-child
+			margin-bottom: 0
+		+media-breakpoint-up(sm)
+			background: $wet-ashpalt
+		+media-breakpoint-up(md)
+			background: $green-sea
+		+media-breakpoint-up(lg)
+			background: $carrot
+		+media-breakpoint-up(xl)
+			background: $clouds
+

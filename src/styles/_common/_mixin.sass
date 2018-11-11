@@ -1,0 +1,33 @@
+// Các Mixin viết vào đây
+=before-line($mauchu: #fff, $trai: 50%, $can: -50%, $bt: 1.5rem)
+	color: $mauchu
+	margin-bottom: 2rem 
+	text-align: center
+	span
+		display: inline-block
+		height: 3px
+		background: $sen
+		width: 70px
+		position: relative
+		&:before,
+		&:after
+			content: ''
+			display: block
+		&:before
+			width: 0
+			height: 0
+			border-top: 3px solid $sen
+			border-left: 3px solid transparent
+			position: absolute
+			left: -3px
+		&:after
+			width: 0
+			height: 0
+			border-bottom: 3px solid $sen
+			border-right: 3px solid transparent
+			position: absolute
+			left: 70px
+		position: absolute
+		bottom: $bt
+		left: $trai
+		transform: translateX($can)

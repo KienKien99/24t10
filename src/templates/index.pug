@@ -1,0 +1,103 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-banner
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/home/banner_1.png", alt="")
+				.title aaaachghghjkbvghj svvhgfs gsyhucvf h ggb
+			.item
+				img(src="./img/home/banner_2.png", alt="")
+				.title aaaachghghjkbvghj svvhgfs gsyhucvf h ggb
+
+			.item
+				img(src="./img/home/banner_3.png", alt="")
+				.title aaaachghghjkbvghj svvhgfs gsyhucvf h ggb
+
+			.item
+				img(src="./img/home/banner_4.png", alt="")
+				.title aaaachghghjkbvghj svvhgfs gsyhucvf h ggb
+	section.home-services
+		.container
+			.row
+				.col
+					h2 SERVICES
+						span.item2
+			.row
+				.col-md-4.item1
+					.figure
+						img.img-fluid(src="./img/gioithieu/thuonghieu_1.png", alt="")
+				.col-md-4.item1
+					.figure
+						img.img-fluid(src="./img/gioithieu/thuonghieu_2.png", alt="")
+				.col-md-4.item1
+					.figure
+						img.img-fluid(src="./img/gioithieu/thuonghieu_3.png", alt="")
+	section.home-khuyenmai
+		.container
+			.row
+				.col
+					.box
+						.row
+							.col-sm-8.col-md-7.col-lg-6
+								h2 Chuong trinh khuyen mai
+									span
+								
+								h3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque totam praesentium soluta, amet deserunt error laboriosam iusto nihil vero mollitia sed odio cum est cupiditate optio alias minima, facilis delectus.
+								.btn.xemngay xem ngay
+	section.home-gioithieu
+		.container
+			.row
+				.col.banhxe
+				.col
+					.row
+						.col
+							figure
+								img(src="./img/home/gioithieu_1.png", alt="")
+								figcaption
+									h2 Gioi thieu
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus et sapiente perferendis veritatis laborum reiciendis neque expedita, dolore reprehenderit eius, quaerat soluta tempore ut eaque temporibus nisi numquam. Sunt, iusto.
+									.icon
+										i.fa.fa-arrow-right
+					.row
+						.col
+							figure
+								img(src="./img/home/gioithieu_2.png", alt="")
+								figcaption
+									h2 Gioi thieu
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus et sapiente perferendis veritatis laborum reiciendis neque expedita, dolore reprehenderit eius, quaerat soluta tempore ut eaque temporibus nisi numquam. Sunt, iusto.
+									.icon
+										i.fa.fa-arrow-right
+	section.home-tintuc
+		.container
+			.row
+				.col
+					h2 TIN TỨC
+						span
+			.row
+				.col-sm-6
+					figure
+						img.img-fluid(src="./img/home/tintuc_1.png", alt="")
+				.col-sm-6
+					.row.no-gutters
+						.col-sm-6
+							figure
+								img.img-fluid(src="./img/home/tintuc_2.png", alt="")
+						.col-sm-6
+							h2.tieude Lorem ipsum  
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet doloribus, laborum fugit qui corporis quos iusto!
+					.row.no-gutters
+						.col-sm-6.order-sm-2
+							figure
+								img.img-fluid(src="./img/home/tintuc_3.png", alt="")
+						.col-sm-6.order-sm-1
+							h2.tieude Adipisicing elit. 
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet doloribus, laborum fugit qui corporis quos iusto!
